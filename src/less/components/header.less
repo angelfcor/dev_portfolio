@@ -1,6 +1,6 @@
 header {
-    background-color: @secondary-background-color;
-    color: #ffffff;
+    background-color: @bg-page;
+    color: @text-primary;
     padding: 1rem 0;
 
     .header-inner {
@@ -12,7 +12,7 @@ header {
     .logo {
         font-size: 1.2rem;
         font-weight: 700;
-        color: #ffffff;
+        color: @text-primary;
     }
 
     nav {
@@ -20,12 +20,12 @@ header {
         gap: 1.5rem;
 
         a {
-            color: @secondary-text-color;
+            color: @text-muted;
             text-decoration: none;
             font-size: 0.9rem;
             font-weight: 600;
             &:hover {
-                color: @accent-text-color;
+                color: @accent;
             }
         }
     }

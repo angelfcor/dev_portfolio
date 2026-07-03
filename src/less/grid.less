@@ -21,17 +21,11 @@
         display: flex;
         flex-wrap: wrap;
         [class*='col-'] {
-            flex: 0, 0;
+            flex: 0 0;
             display: flex;
         }
     }
-    &.debug {
-        .row {
-            [class*='col-1'] {
-                border: 1px solid darken(@primary-background-color, 30%);
-            }
-        }
-    }
+
     // Generar las columnas para móviles
     .generarColumnas('', 12);
     // Generar para Tablers

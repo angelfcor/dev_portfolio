@@ -1,6 +1,6 @@
 #hero {
-    background-color: @secondary-background-color;
-    color: #ffffff;
+    background-color: @bg-page;
+    color: @text-primary;
     padding: 6rem 0;
     text-align: center;
 
@@ -13,7 +13,7 @@
 
     .kicker {
         margin: 0;
-        color: @accent-text-color;
+        color: @accent;
         text-transform: uppercase;
         letter-spacing: 0.12em;
         font-size: 0.8rem;
@@ -23,18 +23,18 @@
     h1 {
         font-size: 2.5rem;
         margin: 0;
-        color: #ffffff;
+        color: @text-primary;
         line-height: 1.1;
     }
 
     .tagline {
         margin: 0;
-        color: @secondary-text-color;
+        color: @text-secondary;
         font-size: 1rem;
     }
 
     .hero-bio p {
-        color: @secondary-text-color;
+        color: @text-secondary;
         font-size: 0.95rem;
         line-height: 1.7;
         margin: 0;
@@ -45,12 +45,12 @@
         width: 160px;
         height: 160px;
         border-radius: 50%;
-        border: 3px solid @accent-text-color;
+        border: 3px solid @accent;
         overflow: hidden;
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: darken(@primary-background-color, 5%);
+        background-color: darken(@bg-page, 3%);
     }
 
     @media (min-width: 768px) {
