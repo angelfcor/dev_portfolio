@@ -1,0 +1,51 @@
+.product-table-section {
+    padding: 2rem 1rem;
+
+    h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: @primary-text-color;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .product-table {
+        width: 100%;
+        border-collapse: collapse;
+        background-color: @primary-background-color;
+        min-width: 600px;
+
+        thead {
+            background-color: @secondary-background-color;
+            color: @secondary-text-color;
+
+            th {
+                padding: 0.75rem 1rem;
+                text-align: left;
+                font-weight: bold;
+                white-space: nowrap;
+            }
+        }
+
+        tbody {
+            tr {
+                &:nth-child(even) {
+                    background-color: darken(@primary-background-color, 5%);
+                }
+
+                &:hover {
+                    background-color: lighten(@accent-background-color, 50%);
+                }
+
+                td {
+                    padding: 0.65rem 1rem;
+                    border-bottom: 1px solid darken(@primary-background-color, 10%);
+                    color: @primary-text-color;
+                }
+            }
+        }
+    }
+}

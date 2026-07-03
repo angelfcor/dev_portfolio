@@ -1,0 +1,31 @@
+<section class="product-table-section grid">
+    <div class="row">
+        <div class="col-12">
+            <h2>Listado de Productos</h2>
+            <div class="table-wrapper">
+                <table class="product-table">
+                    <thead>
+                        <tr>
+                            <th>SKU</th>
+                            <th>Nombre del Producto</th>
+                            <th>Precio Unitario</th>
+                            <th>Stock</th>
+                            <th>Categoría</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{#each productos}}
+                        <tr>
+                            <td>{{sku}}</td>
+                            <td>{{nombre}}</td>
+                            <td>L {{precio_unitario}}</td>
+                            <td>{{stock}}</td>
+                            <td>{{categoria}}</td>
+                        </tr>
+                        {{/each}}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
