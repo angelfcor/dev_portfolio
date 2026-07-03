@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>Proyectos</h2>
+    <div class="grid">
+        <div class="row justify-center">
+            {{#each projects}}
+            <div class="col-12 col-md-6">
+                {{>project-card this}}
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</div>
